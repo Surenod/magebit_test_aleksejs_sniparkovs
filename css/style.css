@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.font_title_desk {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.font_text_desk {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.font_title_mob {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.font_text_mob {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.global_link {
+  color: #131821;
+}
+
+.global_link:hover {
+  color: #4066A5;
+}
+
+.global_link:active {
+  color: #233759;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main {
+  max-width: 1920px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  position: absolute;
+  top: 9.2%;
+  left: 5.2%;
+  z-index: 1;
+  width: 480px;
+}
+
+nav .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 118px;
+  position: relative;
+}
+
+nav .logo .logo_name {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+nav .nav_links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 40px;
+  width: 100%;
+  max-width: 250px;
+}
+
+nav .nav_links a {
+  font-family: Arial;
+  line-height: 26px;
+  color: #6A707B;
+  text-decoration: none;
+}
+
+.main_container {
+  width: 680px;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#F2F5FA));
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.success {
+  display: none;
+}
+
+.main_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  width: 100%;
+  max-width: 400px;
+  border-bottom: 1px solid #E3E3E4;
+  margin-top: 55%;
+}
+
+main .main_body_title {
+  color: #131821;
+  margin-bottom: 15px;
+}
+
+main .main_body_text {
+  color: #6A707B;
+}
+
+main .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 165.7%;
+  border: 1px solid #E3E3E4;
+  border-left: 4px solid #4066A5;
+  margin-left: -12%;
+  margin-top: 12.5%;
+}
+
+main .input:hover {
+  -webkit-box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+          box-shadow: 0px 30px 40px rgba(19, 24, 33, 0.06);
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
+}
+
+main .input:focus-within {
+  border-color: #4066A5;
+}
+
+main .input:focus-within .email_submit:before {
+  color: #4066A5;
+  opacity: 1;
+}
+
+main .email_input {
+  border: none;
+  width: 87.4%;
+  height: 70px;
+  z-index: 1;
+  padding-left: 40px;
+  outline: none;
+}
+
+main .email_submit {
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+  border: none;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+
+main .email_submit:focus:active {
+  background: white;
+}
+
+main .email_submit:before {
+  content: "\ea3c";
+  font-family: 'icomoon';
+  width: 24px;
+  height: 14px;
+  position: absolute;
+  top: 27px;
+  left: 22px;
+  color: #131821;
+  opacity: 0.3;
+}
+
+main .visually_hidden {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+main .checkbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  overflow: none;
+  margin: 12.5% 0%;
+}
+
+main .checkbox .terms {
+  margin-left: 4px;
+}
+
+main .custom_checkbox {
+  width: 26px;
+  height: 26px;
+  background: #FFFFFF;
+  border: 1px solid #E3E3E4;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 15px;
+}
+
+main .custom_checkbox:before {
+  font-family: 'icomoon';
+  content: "\f00c";
+  color: #FFFFFF;
+  width: 14px;
+  height: 11px;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+main .classic_checkbox:checked ~ .custom_checkbox {
+  background-color: #4066A5;
+}
+
+.errors {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #a16969;
+}
+
+.main_footer {
+  width: 246px;
+  margin: 0 auto;
+}
+
+.main_footer_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.facebook {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #E3E3E4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.facebook:before {
+  content: "\f09a";
+  font-family: 'icomoon';
+  color: #131821;
+  line-height: 16px;
+  width: 8px;
+  opacity: 0.3;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+}
+
+.facebook:hover {
+  background-color: #4267B2;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.facebook:hover::before {
+  color: white;
+  opacity: 1;
+}
+
+.facebook:active {
+  background-color: #2F4A80;
+}
+
+.instagram {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #E3E3E4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.instagram:before {
+  content: "\f16d";
+  font-family: 'icomoon';
+  color: #131821;
+  height: 16px;
+  width: 16px;
+  opacity: 0.3;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+.instagram:hover {
+  background-color: #C13584;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.instagram:hover::before {
+  color: white;
+  opacity: 1;
+}
+
+.instagram:active {
+  background-color: #8F2762;
+}
+
+.twitter {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #E3E3E4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.twitter:before {
+  content: "\f099";
+  font-family: 'icomoon';
+  color: #131821;
+  height: 13px;
+  width: 16px;
+  opacity: 0.3;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+.twitter:hover {
+  background-color: #1DA1F2;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.twitter:hover::before {
+  color: white;
+  opacity: 1;
+}
+
+.twitter:active {
+  background-color: #177FBF;
+}
+
+.youtube {
+  width: 46px;
+  height: 46px;
+  border: 2px solid #E3E3E4;
+  border-radius: 50%;
+  position: relative;
+}
+
+.youtube:before {
+  content: "\f16a";
+  font-family: 'icomoon';
+  color: #131821;
+  line-height: 11px;
+  width: 16px;
+  opacity: 0.3;
+  position: absolute;
+  top: 16px;
+  left: 13px;
+}
+
+.youtube:hover {
+  background-color: #FF0000;
+  -webkit-box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+          box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.youtube:hover::before {
+  color: white;
+  opacity: 1;
+}
+
+.youtube:active {
+  background-color: #960000;
+}
+
+.main_bg {
+  max-width: 1240px;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg_1.jpg) center no-repeat;
+  background-size: cover;
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
