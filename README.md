@@ -1,0 +1,1 @@
+# magebit_test_aleksejs_sniparkovs
